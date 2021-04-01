@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap');
+$MainColor: #2B2E4A;
+$HeaderColor: #53354A;
+$ActionColor: #E84545;
+$ActionColorHover:#FF9191;
+$CardColor:#903749;
+
+
+//--------------------------------------------------Layout--------------------------------------------------------------------
+html {
+    position: relative;
+    min-height: 100%;
+  }
+body{
+    background-color: #2B2E4A;
+    margin: 0;
+    font-family:'Exo', sans-serif;
+    font-size: 1em;
+    color:white;
+    padding-bottom: 50px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: absolute;
+    top:0;
+    width: 100%;
+    background-color: #53354A;
+    nav{
+         padding: 2em 10vw 0 10vw;
+        @media(min-width:1200px){
+        padding: 2em 0 0 0;
+        margin: auto;
+        width: 60%;
+        height: 100%;
+        }
+    }
+}
+.nav-1{
+    .logo{
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        span{
+            font-size: 16px;
+        }
+    }
+}
+.nav-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        ul{
+            padding: 0;
+            li{
+                display: inline;
+                margin-right: 3em;
+                cursor: pointer;
+            }
+            li:hover{
+                color: $ActionColorHover;
+            }
+        }
+        .korpa{
+          position: relative;
+          padding: 8px 40px 8px 40px;
+          bottom: 1.5em;
+          background-color: $MainColor;
+          border:$ActionColor solid 2px;
+          color:$ActionColor;
+          cursor: pointer;
+          .svg-korpa{
+              position: absolute;
+              left:1em;
+              bottom: 2px;
+          }
+          span{
+            position: relative;
+            font-weight: bold;
+            left:1em;
+          }
+        }
+        .korpa:hover{
+            background-color: lighten($MainColor, 5%);
+        }
+}
+footer{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    background-color: #53354A;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    .ecommerce{
+        cursor: pointer;
+        margin-top: auto;
+        svg{
+            position: relative;
+            top: 5px;
+            left:10px;
+        }   
+    }
+    .ecommerce:hover{
+        color:$ActionColorHover
+    }
+    
+}
+

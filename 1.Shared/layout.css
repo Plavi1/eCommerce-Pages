@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap");
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #2B2E4A;
+  margin: 0;
+  font-family: 'Exo', sans-serif;
+  font-size: 1em;
+  color: white;
+  padding-bottom: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #53354A;
+}
+
+header nav {
+  padding: 2em 10vw 0 10vw;
+}
+
+@media (min-width: 1200px) {
+  header nav {
+    padding: 2em 0 0 0;
+    margin: auto;
+    width: 60%;
+    height: 100%;
+  }
+}
+
+.nav-1 .logo {
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-1 .logo span {
+  font-size: 16px;
+}
+
+.nav-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-2 ul {
+  padding: 0;
+}
+
+.nav-2 ul li {
+  display: inline;
+  margin-right: 3em;
+  cursor: pointer;
+}
+
+.nav-2 ul li:hover {
+  color: #FF9191;
+}
+
+.nav-2 .korpa {
+  position: relative;
+  padding: 8px 40px 8px 40px;
+  bottom: 1.5em;
+  background-color: #2B2E4A;
+  border: #E84545 solid 2px;
+  color: #E84545;
+  cursor: pointer;
+}
+
+.nav-2 .korpa .svg-korpa {
+  position: absolute;
+  left: 1em;
+  bottom: 2px;
+}
+
+.nav-2 .korpa span {
+  position: relative;
+  font-weight: bold;
+  left: 1em;
+}
+
+.nav-2 .korpa:hover {
+  background-color: #34385a;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #53354A;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .ecommerce {
+  cursor: pointer;
+  margin-top: auto;
+}
+
+footer .ecommerce svg {
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
+footer .ecommerce:hover {
+  color: #FF9191;
+}
+/*# sourceMappingURL=layout.css.map */
