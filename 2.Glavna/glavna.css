@@ -93,21 +93,28 @@ main {
   width: 300px;
   background-color: #903749;
   padding: 1em;
+  text-align: center;
 }
 
 .card .card-img {
   height: 23em;
   background-color: green;
+  margin-bottom: 1em;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
 }
 
 .card h3 {
-  position: relative;
-  width: 0;
-  bottom: 0.5em;
-  left: 6em;
+  margin: 0;
+  text-align: center;
+  padding: 2px;
 }
 
 .card .info {
+  width: 18em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,7 +122,8 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 14px;
-  margin-top: -25px;
+  text-align: left;
+  margin: auto;
 }
 
 .card .info li {
@@ -124,23 +132,21 @@ main {
 
 .card .info span {
   font-weight: bold;
-}
-
-.card .btn-kupi {
   display: block;
-  margin-top: 1em;
 }
 
-.card .btn-kupi .btn {
-  cursor: pointer;
-  margin: auto;
-  width: 100px;
+.card .btn-u-korpu {
+  all: unset;
+  width: 7em;
+  height: 1em;
+  margin-top: 1em;
   padding: 1em;
   background-color: #E84545;
   font-weight: bold;
+  text-align: center;
 }
 
-.card .btn-kupi .btn:hover {
+.card .btn-u-korpu:hover {
   background-color: #FF9191;
 }
 
@@ -258,14 +264,31 @@ header nav {
   }
 }
 
+.nav-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .nav-1 .logo {
   font-size: 40px;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .nav-1 .logo span {
   font-size: 16px;
+}
+
+.nav-1 li {
+  display: inline;
+  padding-left: 1.5em;
+}
+
+.nav-1 .register {
+  color: #E84545;
 }
 
 .nav-2 {
@@ -353,5 +376,9 @@ footer .ecommerce svg {
 
 footer .ecommerce:hover {
   color: #FF9191;
+}
+
+a {
+  cursor: pointer;
 }
 /*# sourceMappingURL=glavna.css.map */

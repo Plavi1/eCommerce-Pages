@@ -70,43 +70,50 @@ main{
     width:300px;
     background-color: $CardColor;
     padding: 1em;
+    text-align: center;
     .card-img{
         height: 23em;
         background-color: green;
+        margin-bottom: 1em;
+    }
+    img{
+        height: 100%;
+        width: 100%;
     }
     h3{
-        position: relative;
-        width: 0;
-        bottom: 0.5em;
-        left: 6em;
+        margin:0;
+        text-align: center;
+        padding: 2px;
     }
     .info{
+        width: 18em;
         display: flex;
         justify-content: space-between;
         font-size: 14px;
-        margin-top: -25px;
+        text-align: left;
+        margin:auto;
         li{
             margin-top: 1em;
         }
         span{
             font-weight: bold;
+            display: block;
         }
     }
-    .btn-kupi{
-        display: block;
-        margin-top:1em;
-        .btn{
-            cursor: pointer;
-            margin: auto;
-            width: 100px;
-            padding: 1em;
-            background-color: $ActionColor;
-            font-weight: bold;
-        }
-        .btn:hover{
-            background-color: $ActionColorHover;
-        }
+    .btn-u-korpu{
+        all: unset;
+        width: 7em;
+        height: 1em;
+        margin-top: 1em;
+        padding: 1em;
+        background-color: $ActionColor;
+        font-weight: bold;
+        text-align: center;
     }
+    .btn-u-korpu:hover{
+    background-color: $ActionColorHover;
+    }
+    
 
 }
 .search{
@@ -230,13 +237,21 @@ header{
     }
 }
 .nav-1{
+    display: flex;
+    justify-content: space-between;
     .logo{
         font-size: 40px;
         font-weight: bold;
-        cursor: pointer;
         span{
             font-size: 16px;
         }
+    }
+    li{
+        display: inline;
+        padding-left: 1.5em;
+    }
+    .register{
+        color:$ActionColor
     }
 }
 .nav-2{
@@ -301,4 +316,7 @@ footer{
         color:$ActionColorHover
     }
     
+}
+a{
+    cursor: pointer;
 }
